@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Calorie Burner</title>
 <body>
 
+<h1>Calorie Burner</h1>
 
-<h1>Calories Burner</h1>
+<div>
+        <input type="radio" id="SitUps" name="exercises" value="Sit Ups" />
+        <label for="SitUps">Sit Ups</label>
+        <br>
+        <input type="radio" id="PushUps" name="exercises" value="Push Ups" />
+        <label for="PushUps">Push Ups</label>
+        <br>
+        <input type="radio" id="JumpRope" name="exercises" value="Jump Rope" />
+        <label for="JumpRope">Jump Rope</label>
+        <br>
 
-
-<div id="Radios">
-    <div>
-        <input type="radio" id="SitUps" name="exercises" value="SitUps" />
-        <label for="SitUps">Sit Ups</label>
-
-        <input type="radio" id="PushUps" name="exercises" value="PushUps" />
-        <label for="PushUps">Push Ups</label>
-
-        <input type="radio" id="JumpRope" name="exercises" value="JumpRope" />
-        <label for="JumpRope">Jump Rope</label>
-
-    </div>
-    <p>How many minutes</p>
-
-
-    <button id="ShowAll">show All</button>
 </div>
+<br>
+<label for="minutes">How many minutes</label><br>
+<input type="number" id="minutes" name="minutes">
+<br>
+<button id="add" onclick="addSet()">Add</button>
+<br>
+<br>
+<button id="MostBurned" onclick="mostBurned()">Most Burned</button>
+<br>
+<input type="text" id="burnedTotal" name="burnedTotal">
+<br>
+<br>
+<button id="ShowAll" onclick="showAll()">Show All</button>
+
+<br>
+<ul id="reps"></ul>
+
 
 </body>
 <script src="script.js"></script>
